@@ -27,7 +27,7 @@ namespace FourConnect
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.FillRectangle(Brushes.Aquamarine, 24, 24, 340, 300);
+            e.Graphics.FillRectangle(Brushes.MidnightBlue, 24, 24, 340, 300);
             for (int i = 0; i < 5; i++)
             {
                 for (int j = 0; j < 7; j++)
@@ -64,8 +64,8 @@ namespace FourConnect
                     int winner = this.WinnerPlayer(this.turn);
                     if(winner != -1)
                     {
-                        string player = (winner == 1) ? "Crveni" : "Zeleni";
-                        MessageBox.Show("Pobjednik je " + player + " igrac");
+                        string player = (winner == 1) ? "crveni" : "zeleni";
+                        MessageBox.Show("Pobjednik je " + player + " igrac! Pocinje nova igra!");
                         Application.Restart();
                     }
 
@@ -159,6 +159,9 @@ namespace FourConnect
             return -1;
         }
 
-    
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
