@@ -1,6 +1,6 @@
 ﻿namespace FourConnect
 {
-    partial class Form1
+    partial class FourConnect
     {
         /// <summary>
         /// Required designer variable.

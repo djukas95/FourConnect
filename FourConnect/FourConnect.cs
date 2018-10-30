@@ -11,12 +11,12 @@ using System.Windows.Forms;
 namespace FourConnect
 {
     
-    public partial class Form1 : Form
+    public partial class FourConnect : Form
     {
         private Rectangle[] boardColumns;
         private int[,] board;
         private int turn;
-        public Form1()
+        public FourConnect()
         {
             InitializeComponent();
             this.boardColumns = new Rectangle[7];
